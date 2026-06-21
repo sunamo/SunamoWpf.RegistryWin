@@ -4341,13 +4341,13 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "26.2.7.2",
+    "version": "26.6.21.1",
     "restore": {
-      "projectUniqueName": "E:\\vs\\Projects\\WindowsNuGetPackages\\SunamoWpf.RegistryWin\\SunamoWpf.RegistryWin\\SunamoWpf.RegistryWin.csproj",
+      "projectUniqueName": "E:\\vs\\Projects\\PlatformIndependentNuGetPackages\\SunamoWpf.RegistryWin\\SunamoWpf.RegistryWin\\SunamoWpf.RegistryWin.csproj",
       "projectName": "SunamoWpf.RegistryWin",
-      "projectPath": "E:\\vs\\Projects\\WindowsNuGetPackages\\SunamoWpf.RegistryWin\\SunamoWpf.RegistryWin\\SunamoWpf.RegistryWin.csproj",
+      "projectPath": "E:\\vs\\Projects\\PlatformIndependentNuGetPackages\\SunamoWpf.RegistryWin\\SunamoWpf.RegistryWin\\SunamoWpf.RegistryWin.csproj",
       "packagesPath": "C:\\Users\\aktiv\\.nuget\\packages\\",
-      "outputPath": "E:\\vs\\Projects\\WindowsNuGetPackages\\SunamoWpf.RegistryWin\\SunamoWpf.RegistryWin\\obj\\",
+      "outputPath": "E:\\vs\\Projects\\PlatformIndependentNuGetPackages\\SunamoWpf.RegistryWin\\SunamoWpf.RegistryWin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4370,8 +4370,8 @@
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "projectReferences": {
-            "E:\\vs\\Projects\\WindowsNuGetPackages\\SunamoWpf.SunamoUtils\\SunamoWpf.SunamoUtils\\SunamoWpf.SunamoUtils.csproj": {
-              "projectPath": "E:\\vs\\Projects\\WindowsNuGetPackages\\SunamoWpf.SunamoUtils\\SunamoWpf.SunamoUtils\\SunamoWpf.SunamoUtils.csproj"
+            "E:\\vs\\Projects\\PlatformIndependentNuGetPackages\\SunamoWpf.SunamoUtils\\SunamoWpf.SunamoUtils\\SunamoWpf.SunamoUtils.csproj": {
+              "projectPath": "E:\\vs\\Projects\\PlatformIndependentNuGetPackages\\SunamoWpf.SunamoUtils\\SunamoWpf.SunamoUtils\\SunamoWpf.SunamoUtils.csproj"
             }
           }
         }

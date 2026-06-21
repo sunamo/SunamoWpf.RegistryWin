@@ -1,0 +1,14 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\bin\Release\net10.0-windows\SunamoWpf.RegistryWin.deps.json
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\bin\Release\net10.0-windows\SunamoWpf.RegistryWin.dll
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\bin\Release\net10.0-windows\SunamoWpf.RegistryWin.pdb
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\bin\Release\net10.0-windows\SunamoWpf.SunamoUtils.dll
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\bin\Release\net10.0-windows\SunamoWpf.SunamoUtils.pdb
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Release\net10.0-windows\SunamoWpf.RegistryWin.csproj.AssemblyReference.cache
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Release\net10.0-windows\SunamoWpf.RegistryWin.GeneratedMSBuildEditorConfig.editorconfig
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Release\net10.0-windows\SunamoWpf.RegistryWin.csproj.CoreCompileInputs.cache
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Release\net10.0-windows\SunamoWpf.RegistryWin.sourcelink.json
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Release\net10.0-windows\SunamoWp.A451C486.Up2Date
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Release\net10.0-windows\SunamoWpf.RegistryWin.dll
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Release\net10.0-windows\refint\SunamoWpf.RegistryWin.dll
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Release\net10.0-windows\SunamoWpf.RegistryWin.pdb
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Release\net10.0-windows\ref\SunamoWpf.RegistryWin.dll
