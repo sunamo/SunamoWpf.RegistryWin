@@ -1,5 +1,4 @@
-﻿global using SunamoWpf._sunamo;
-global using SunamoWpf._sunamo.SunamoExceptions;
+global using SunamoWpf.RegistryWin._sunamo;
 global using System.Collections;
 global using System.Collections.ObjectModel;
 global using System.ComponentModel;
