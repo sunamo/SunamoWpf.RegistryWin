@@ -5,7 +5,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>SunamoWpf</RootNamespace>
     <Description>Windows Registry helpers extracted from SunamoWpf</Description>
-    <Version>26.9.30.3</Version>
+    <Version>26.9.30.4</Version>
     <Authors>www.sunamo.cz</Authors>
     <Copyright>www.sunamo.cz</Copyright>
     <PackageProjectUrl>https://sunamo.github.io/PlatformIndependentNuGetPackages/SunamoWpf.RegistryWin/</PackageProjectUrl>
@@ -30,6 +30,9 @@
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="10.0.8" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils.csproj" />
+  </ItemGroup>
+  <!-- Excluded from the namespace normalization step of the publish tooling (namespaces are intentionally kept as-is). -->
+  <ItemGroup>
+    <None Remove="_sunamo\**" />
   </ItemGroup>
 </Project>
