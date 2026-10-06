@@ -1,0 +1,12 @@
+C:\Users\aktiv\AppData\Local\Temp\build_audit_logs\SunamoWpf.RegistryWin.deps.json
+C:\Users\aktiv\AppData\Local\Temp\build_audit_logs\SunamoWpf.RegistryWin.dll
+C:\Users\aktiv\AppData\Local\Temp\build_audit_logs\SunamoWpf.RegistryWin.pdb
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Debug\net10.0-windows\SunamoWpf.RegistryWin.csproj.AssemblyReference.cache
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Debug\net10.0-windows\SunamoWpf.RegistryWin.GeneratedMSBuildEditorConfig.editorconfig
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Debug\net10.0-windows\SunamoWpf.RegistryWin.csproj.CoreCompileInputs.cache
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Debug\net10.0-windows\SunamoWpf.RegistryWin.sourcelink.json
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Debug\net10.0-windows\SunamoWp.A451C486.Up2Date
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Debug\net10.0-windows\SunamoWpf.RegistryWin.dll
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Debug\net10.0-windows\refint\SunamoWpf.RegistryWin.dll
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Debug\net10.0-windows\SunamoWpf.RegistryWin.pdb
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\obj\Debug\net10.0-windows\ref\SunamoWpf.RegistryWin.dll
