@@ -53,31 +53,31 @@ public class RegistryHelper //: IRegistry //, IPrevedPpk<RegistryKey, PolozkaReg
     /// <summary>
     /// G pole, ktere bude obsahovat podklice A1 v klici A1 A2.
     /// </summary>
-    /// <param name="p"></param>
+    /// <param name="keyNames"></param>
     /// <param name="adresar"></param>
-    public static IList<RegistryKey> CombinePathWithKeys(List<string> p, RegistryKey adresar)
+    public static IList<RegistryKey> CombinePathWithKeys(List<string> keyNames, RegistryKey adresar)
     {
-        List<RegistryKey> l = new List<RegistryKey>();
-        foreach (string var in p)
+        List<RegistryKey> keys = new List<RegistryKey>();
+        foreach (string var in keyNames)
         {
-            l.Add(adresar.OpenSubKey(var));
+            keys.Add(adresar.OpenSubKey(var));
         }
-        return l;
+        return keys;
     }
     /// <summary>
     /// G hodnoty vsech polozek ktere byly nalezeny v A1 nerek vc. hodnoty.
     /// </summary>
     public static RegistryEntry[] GetAllValues(string cesta)
     {
-        List<RegistryEntry> o = new List<RegistryEntry>();
-        RegistryKey rk = GetObjectRegistryKey(cesta);
-        string rks = rk.ToString();
-        List<string> dd = CA.ToListString(rk.GetValueNames());
-        foreach (string var in dd)
+        List<RegistryEntry> entries = new List<RegistryEntry>();
+        RegistryKey registryKey = GetObjectRegistryKey(cesta);
+        string rks = registryKey.ToString();
+        List<string> valueNames = CA.ToListString(registryKey.GetValueNames());
+        foreach (string var in valueNames)
         {
-            o.Add(new RegistryEntry(Registry.GetValue(rks, var, null), cesta, var));
+            entries.Add(new RegistryEntry(Registry.GetValue(rks, var, null), cesta, var));
         }
-        return o.ToArray();
+        return entries.ToArray();
     }
     #region Zakladni
     /// <summary>
@@ -96,17 +96,17 @@ public class RegistryHelper //: IRegistry //, IPrevedPpk<RegistryKey, PolozkaReg
         string pred = null;
         SH.GetPartsByLocation(out pred, out zbylaCesta, cesta, cesta.IndexOf("\\"));
         var tokeny = SHSplit.Split(zbylaCesta, "\\");
-        Type pe = typeof(Registry);
-        FieldInfo[] fi = pe.GetFields();
+        Type registryType = typeof(Registry);
+        FieldInfo[] fields = registryType.GetFields();
         RegistryKey vratit = null;
-        foreach (FieldInfo var in fi)
+        foreach (FieldInfo var in fields)
         {
             // Protoze je staticka, zkusim uzit null
             object rko = var.GetValue(null);
-            RegistryKey rk = (RegistryKey)rko;
-            if (pred == rk.ToString())
+            RegistryKey registryKey = (RegistryKey)rko;
+            if (pred == registryKey.ToString())
             {
-                vratit = rk;
+                vratit = registryKey;
                 break;
             }
         }
@@ -127,8 +127,8 @@ public class RegistryHelper //: IRegistry //, IPrevedPpk<RegistryKey, PolozkaReg
     {
         string nazevObjektu = "";
         cesta = ExtractPathFromPath(out nazevObjektu, cesta);
-        RegistryKey rk = GetObjectRegistryKey(cesta);
-        rk.SetValue(nazevObjektu, value);
+        RegistryKey registryKey = GetObjectRegistryKey(cesta);
+        registryKey.SetValue(nazevObjektu, value);
     }
     /// <summary>
     /// G hodnotu z komplexni cesty vc. hodnoty A1.
@@ -138,28 +138,28 @@ public class RegistryHelper //: IRegistry //, IPrevedPpk<RegistryKey, PolozkaReg
     {
         string nazevObjektu = "";
         cesta = ExtractPathFromPath(out nazevObjektu, cesta);
-        RegistryKey rk = GetObjectRegistryKey(cesta);
-        return rk.GetValue(nazevObjektu);
+        RegistryKey registryKey = GetObjectRegistryKey(cesta);
+        return registryKey.GetValue(nazevObjektu);
     }
     #endregion
     #region Spojovani
     /// <summary>
     /// G spojene a1  a A2.
     /// </summary>
-    /// <param name="s1"></param>
-    /// <param name="s2"></param>
-    public static string CombinePaths(string s1, string s2)
+    /// <param name="parentPath"></param>
+    /// <param name="childPath"></param>
+    public static string CombinePaths(string parentPath, string childPath)
     {
-        return Path.Combine(s1, s2);
+        return Path.Combine(parentPath, childPath);
     }
     /// <summary>
     /// Otevre subklic A2 v A1.
     /// </summary>
-    /// <param name="s1"></param>
-    /// <param name="s2"></param>
-    public static RegistryKey CombinePaths(RegistryKey s1, string s2)
+    /// <param name="parentKey"></param>
+    /// <param name="subKeyName"></param>
+    public static RegistryKey CombinePaths(RegistryKey parentKey, string subKeyName)
     {
-        return s1.OpenSubKey(s2);
+        return parentKey.OpenSubKey(subKeyName);
     }
     #endregion
     /// <summary>
@@ -184,11 +184,11 @@ public class RegistryHelper //: IRegistry //, IPrevedPpk<RegistryKey, PolozkaReg
     /// Prevede seznam PolozkaRegistru na seznam RegistryKey.
     /// Neprevadi nic, naplni vse null
     /// </summary>
-    /// <param name="uu"></param>
-    public static List<RegistryKey> ConvertPpk(List<RegistryEntry> uu)
+    /// <param name="entries"></param>
+    public static List<RegistryKey> ConvertPpk(List<RegistryEntry> entries)
     {
         List<RegistryKey> ppk = new List<RegistryKey>();
-        foreach (RegistryEntry var in uu)
+        foreach (RegistryEntry var in entries)
         {
             ppk.Add(null);
         }
@@ -198,11 +198,11 @@ public class RegistryHelper //: IRegistry //, IPrevedPpk<RegistryKey, PolozkaReg
     /// Prevede seznam PolozkaRegistru na seznam RegistryKey.
     /// Neprevadi nic, naplni vse null
     /// </summary>
-    /// <param name="uu"></param>
-    public static List<RegistryEntry> ConvertPpk(List<RegistryKey> uu)
+    /// <param name="keys"></param>
+    public static List<RegistryEntry> ConvertPpk(List<RegistryKey> keys)
     {
         List<RegistryEntry> ppk = new List<RegistryEntry>();
-        foreach (RegistryKey var in uu)
+        foreach (RegistryKey var in keys)
         {
             ppk.Add(null);
         }
@@ -210,8 +210,8 @@ public class RegistryHelper //: IRegistry //, IPrevedPpk<RegistryKey, PolozkaReg
     }
     #endregion
     #endregion
-    public static void GetHkeyAndPath(string p, out string hkey, out string key)
+    public static void GetHkeyAndPath(string registryPath, out string hkey, out string key)
     {
-        SH.GetPartsByLocation(out hkey, out key, p, '\\');
+        SH.GetPartsByLocation(out hkey, out key, registryPath, '\\');
     }
 }
