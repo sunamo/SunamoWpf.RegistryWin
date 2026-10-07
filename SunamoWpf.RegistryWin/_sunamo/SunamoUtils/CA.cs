@@ -4,10 +4,10 @@ namespace SunamoWpf.RegistryWin._sunamo;
 internal class CA
 {
 
-    public static List<string> Trim(List<string> l)
+    public static List<string> Trim(List<string> items)
     {
-        for (var i = 0; i < l.Count; i++) l[i] = l[i].Trim();
-        return l;
+        for (var index = 0; index < items.Count; index++) items[index] = items[index].Trim();
+        return items;
     }
     public static void InitFillWith(List<string> datas, int pocet, string initWith = "")
     {
@@ -16,11 +16,11 @@ internal class CA
 
     public static void InitFillWith<T>(List<T> datas, int pocet, T initWith)
     {
-        for (var i = 0; i < pocet; i++) datas.Add(initWith);
+        for (var index = 0; index < pocet; index++) datas.Add(initWith);
     }
 
-    public static List<string> ToListString(params string[] v)
+    public static List<string> ToListString(params string[] values)
     {
-        return v.ToList();
+        return values.ToList();
     }
 }

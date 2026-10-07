@@ -4,9 +4,9 @@ namespace SunamoWpf.RegistryWin._sunamo;
 internal class SHSplit
 {
 
-    public static List<string> Split(string p, params string[] newLine)
+    public static List<string> Split(string text, params string[] newLine)
     {
-        return p.Split(newLine, StringSplitOptions.RemoveEmptyEntries).ToList();
+        return text.Split(newLine, StringSplitOptions.RemoveEmptyEntries).ToList();
     }
 
     public static List<string> Split(StringSplitOptions stringSplitOptions, string text, params string[] deli)
@@ -17,7 +17,7 @@ internal class SHSplit
         var result = text.Split(deli, stringSplitOptions).ToList();
         CA.Trim(result);
         if (stringSplitOptions == StringSplitOptions.RemoveEmptyEntries)
-            result = result.Where(d => d.Trim() != string.Empty).ToList();
+            result = result.Where(item => item.Trim() != string.Empty).ToList();
 
         return result;
     }
