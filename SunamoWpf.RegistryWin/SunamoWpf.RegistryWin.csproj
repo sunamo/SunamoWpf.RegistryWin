@@ -5,7 +5,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>SunamoWpf</RootNamespace>
     <Description>Windows Registry helpers extracted from SunamoWpf</Description>
-    <Version>26.9.30.4</Version>
+    <Version>26.10.7.5</Version>
     <Authors>www.sunamo.cz</Authors>
     <Copyright>www.sunamo.cz</Copyright>
     <PackageProjectUrl>https://sunamo.github.io/PlatformIndependentNuGetPackages/SunamoWpf.RegistryWin/</PackageProjectUrl>
@@ -23,7 +23,7 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
     <Optimize>false</Optimize>
-    <PackageReleaseNotes>Sync SunamoWpf.RegistryWin with wnp</PackageReleaseNotes>
+    <PackageReleaseNotes>Rename short identifiers to descriptive names</PackageReleaseNotes>
     <NoWarn>CA1416;CS8618;CS8600;CS8603;CS8625;CS8604;CS8602;CS8601</NoWarn>
   </PropertyGroup>
   <ItemGroup>
