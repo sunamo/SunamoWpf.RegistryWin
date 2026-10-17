@@ -1,16 +1,15 @@
-#define ASYNC
 namespace SunamoWpf.RegistryWin._sunamo;
 
 internal class SH
 {
 
-    public static void GetPartsByLocation(out string pred, out string rest, string text, char separator)
+    internal static void GetPartsByLocation(out string pred, out string rest, string text, char separator)
     {
         var dex = text.IndexOf(separator);
         GetPartsByLocation(out pred, out rest, text, dex);
     }
 
-    public static void GetPartsByLocation(out string pred, out string rest, string text, int pozice)
+    internal static void GetPartsByLocation(out string pred, out string rest, string text, int pozice)
     {
         if (pozice == -1)
         {

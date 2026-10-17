@@ -1,15 +1,14 @@
-#define ASYNC
 namespace SunamoWpf.RegistryWin._sunamo;
 
 internal class SHSplit
 {
 
-    public static List<string> Split(string text, params string[] newLine)
+    internal static List<string> Split(string text, params string[] newLine)
     {
         return text.Split(newLine, StringSplitOptions.RemoveEmptyEntries).ToList();
     }
 
-    public static List<string> Split(StringSplitOptions stringSplitOptions, string text, params string[] deli)
+    internal static List<string> Split(StringSplitOptions stringSplitOptions, string text, params string[] deli)
     {
         if (deli == null || deli.Count() == 0) throw new Exception("NoDelimiterDetermined");
         //var ie = CA.OneElementCollectionToMulti(deli);

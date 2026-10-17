@@ -1,4 +1,4 @@
-﻿global using Microsoft.Win32;
+global using Microsoft.Win32;
 global using SunamoWpf.RegistryWin;
 global using System;
 global using System.Collections.Generic;
