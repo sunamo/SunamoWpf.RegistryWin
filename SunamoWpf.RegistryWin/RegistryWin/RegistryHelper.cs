@@ -31,7 +31,7 @@ public class RegistryHelper //: IRegistry //, IPrevedPpk<RegistryKey, PolozkaReg
         #region Polkud A2, vsechny je rek projdu a
         if (vsechnyHodnoty)
         {
-            ThrowEx.Custom(Translate.FromKey(XlfKeys.MustNotBeEnteredWithA2True));
+            ThrowEx.Custom("Must not be entered with a 2 true");
             //vratit.AddRange(VsechnyKlice(klic));
         }
         #endregion

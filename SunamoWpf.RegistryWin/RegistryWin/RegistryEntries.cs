@@ -47,7 +47,7 @@ public class PolozkyRegistru //: ListViewItem
     {
         if (!pridavatPostupne)
         {
-            ThrowEx.Custom(Translate.FromKey(XlfKeys.TryToAdjustThePPIfYouHaveItSetInBulk));
+            ThrowEx.Custom("Try to adjust the PP if you have it set in bulk");
         }
         if (i + 1 != Hodnota.Length)
         {
@@ -57,7 +57,7 @@ public class PolozkyRegistru //: ListViewItem
         }
         else
         {
-            ThrowEx.Custom(Translate.FromKey(XlfKeys.YouGotThroughTheCollectionIndex));
+            ThrowEx.Custom("You got through the collection index");
         }
     }
     #endregion

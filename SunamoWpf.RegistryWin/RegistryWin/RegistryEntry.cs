@@ -76,7 +76,7 @@ public class RegistryEntry //: IUroven
         {
             if (throwExceptionIfNotGettingValues)
             {
-                ThrowEx.Custom(Translate.FromKey(XlfKeys.FailedToGetTheItemFromTheRegistry) + ".");
+                ThrowEx.Custom("Failed to get the item from the registry" + ".");
             }
         }
     }
