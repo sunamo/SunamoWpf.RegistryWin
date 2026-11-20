@@ -210,6 +210,12 @@ public class RegistryHelper //: IRegistry //, IPrevedPpk<RegistryKey, PolozkaReg
     }
     #endregion
     #endregion
+    /// <summary>
+    /// Get hkey and path.
+    /// </summary>
+    /// <param name="registryPath">The registry path.</param>
+    /// <param name="hkey">The hkey.</param>
+    /// <param name="key">The key.</param>
     public static void GetHkeyAndPath(string registryPath, out string hkey, out string key)
     {
         SH.GetPartsByLocation(out hkey, out key, registryPath, '\\');

@@ -1,5 +1,8 @@
 namespace SunamoWpf.RegistryWin;
 
+/// <summary>
+/// Represents the registry entry type.
+/// </summary>
 public class RegistryEntry //: IUroven
 {
     #region DPP
@@ -47,6 +50,9 @@ public class RegistryEntry //: IUroven
     }
     object objekt;
     string cesta;
+    /// <summary>
+    /// The throw exception if not getting values.
+    /// </summary>
     public static bool throwExceptionIfNotGettingValues = false;
     #endregion
     #region base

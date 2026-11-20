@@ -1,9 +1,18 @@
 namespace SunamoWpf.RegistryWin;
 
+/// <summary>
+/// Represents the polozky registru type.
+/// </summary>
 public class PolozkyRegistru //: ListViewItem
 {
     #region DPP
+    /// <summary>
+    /// The datas.
+    /// </summary>
     public List<string> Datas;
+    /// <summary>
+    /// The values.
+    /// </summary>
     public List<string> Values;
     /// <summary>
     /// Jedna se sice o pole, ale je u vsech stejna
